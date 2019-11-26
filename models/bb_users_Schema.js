@@ -20,7 +20,7 @@ User.init({
     username: {
         type: Sequelize.STRING,
         unique: true,
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     username_edited: {
         type: Sequelize.TINYINT(1),
@@ -36,17 +36,17 @@ User.init({
     email: {
         type: Sequelize.STRING,
         unique: true,
-        defaultValue: 'NULL'
+        defaultValue: null
 
     },
     facebook_id: {
         type: Sequelize.STRING,
-        defaultValue: 'NULL',
+        defaultValue: null,
 
     },
     google_id: {
      type: Sequelize.STRING,
-     defaultValue: 'NULL'
+     defaultValue: null
     },
     password: {
         type: Sequelize.STRING,
@@ -54,45 +54,45 @@ User.init({
     },
     name: {
         type: Sequelize.STRING,
-        defaultValue: 'NULL '
+        defaultValue: null
     } ,
     gender: {
         type: Sequelize.CHAR(1),
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     dob: {
         type: Sequelize.DATEONLY,
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     image: {
         type: Sequelize.STRING,
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     phone: {
         type: Sequelize.STRING,
         unique: true,
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     address: {
         type: Sequelize.TEXT,
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     city: {
         type: Sequelize.STRING,
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     state: {
         type: Sequelize.STRING,
-        defaultValue: 'NULL',
+        defaultValue: null,
 
     },
     country_code: {
         type: Sequelize.CHAR(2),
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     zipcode: {
         type: Sequelize.STRING,
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     unused_amount: {
         type: Sequelize.DECIMAL(20,2),
@@ -249,12 +249,12 @@ User.init({
     },
     web_token: {
         type: Sequelize.STRING,
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     status: {
         type: Sequelize.ENUM('0','1'),
         allowNull: false,
-        defaultValue: '1'  
+        defaultValue: '1'
     },
     customer_id: {
         type: Sequelize.STRING,
@@ -276,7 +276,7 @@ User.init({
     },
     access_token: {
         type: Sequelize.STRING,
-        defaultValue: 'NULL'
+        defaultValue: null
     },
     is_paytm_linked: {
         type: Sequelize.INTEGER(11),
